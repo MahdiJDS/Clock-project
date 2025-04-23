@@ -1,0 +1,385 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.list{
+    background-color:rgb(239, 222, 198);
+    width: 99%;
+    display: flex;
+    position: absolute;
+    position: fixed;
+    top: 0px;
+    /* left: -10px; */
+    z-index: 5;
+    /* direction: rtl; */
+}
+
+.list ul{
+    display: flex;
+    text-align: center;
+    gap: 80px;
+    list-style-type: none;
+}
+
+.list ul a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+.list ul a:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.contant{
+    /* width: 100va;
+    height: 100vb;
+    background-color: red; */
+    /* margin-top: 100px; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vb;
+}
+
+.TimeH1{
+  font-size: 40px;
+  position: relative;
+     /* display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; */
+    width: 100px;
+}
+.TimeH1::before{
+    position: absolute;
+    content: '';
+    top: -50%;
+    width: 200px;
+    height: 100px;
+    /* transform: rotate(45deg); */
+    background-color:antiquewhite;
+    border-left: 1px solid black;
+    z-index: 10;
+    animation: Danse 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) forwards ;
+}
+
+@keyframes Danse{
+    0%{margin-left: 0px;}
+    20%{margin-left: 20px;}
+    40%{margin-left: 40px;}
+    60%{margin-left: 60px;}
+    80%{margin-left: 80px;}
+    100%{margin-left: 100px;
+    opacity: 0;}
+}
+
+.time{
+    /* margin-top: 100px; */
+    /* display: flex;
+    text-align: center;
+    justify-content: center; */
+   
+    background-color: rgb(4, 53, 96);
+    width:40% ;
+    /* width: 100px;
+    height: 100px; */
+    border-radius: 10px;
+     box-shadow: 0px 0px 10px 5px rgb(184, 184, 184);
+}
+
+.showTime{
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.contact2{
+    position: relative;
+    background-color:rgb(226, 207, 182);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vb;
+    width: 100%;
+}
+
+.timer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(4, 25, 96);
+    width:40% ;
+    /* width: 100px;
+    height: 100px; */
+    border-radius: 10px;
+     box-shadow: 0px 0px 10px 5px rgb(184, 184, 184);
+}
+
+.contact2 .TimerH1{
+    font-size: 40px;
+    top: 80px;
+    /* margin-top: 100px; */
+    position: absolute;
+}
+
+.contact2 p{
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.btnstart{
+    margin: auto;
+    margin:20px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(63, 78, 106);
+}
+
+.btnstart:hover{
+    background-color: rgb(61, 61, 93);
+    color: rgb(56, 98, 98);
+}
+
+
+.btnend{
+    margin: auto;
+    margin:20px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(63, 78, 106);
+}
+
+.btnend:hover{
+    background-color: rgb(61, 61, 93);
+    color: rgb(56, 98, 98);
+}
+
+.btnagain{
+    margin: auto;
+    margin:20px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(63, 78, 106);
+}
+
+
+.btnagain:hover{
+    background-color: rgb(61, 61, 93);
+    color: rgb(56, 98, 98);
+}
+
+.togle{
+    font-size: 30px;
+    color: aqua;
+    text-decoration:underline;
+    text-shadow: 0px 0px 10px 10px black;
+    background-color: blue;
+    /* transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045); */
+    text-shadow: 0px 0px 10px 10px;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+/* کل اسکرول‌بار */
+::-webkit-scrollbar {
+    width: 12px; /* عرض اسکرول‌بار */
+    height: 10px; /* ارتفاع اسکرول‌بار افقی */
+}
+
+/* دستگیره اسکرول‌بار */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 128, 255, 0.7); /* رنگ دستگیره */
+    border-radius: 10px; /* گرد کردن دستگیره */
+    border: 2px solid white; /* اضافه کردن حاشیه */
+}
+
+/* ناحیه پس‌زمینه اسکرول‌بار */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* رنگ پس‌زمینه اسکرول‌بار */
+    border-radius: 10px;
+}
+
+/* دکمه‌های اسکرول */
+::-webkit-scrollbar-button {
+    background: #007BFF; /* رنگ دکمه‌ها */
+    display:none; /*برای حذف دکمه‌ها */
+}
+
+
+.contact3{
+    position: relative;
+    background-color:rgb(154, 135, 111);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vb;
+    width: 100%;
+}
+
+.inp{
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.inp .inpsecond{
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px;
+    border: none;
+}
+
+.inp .inpminute{
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px;
+    border: none;
+}
+
+.inp .inphour{
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px;
+    border: none;
+}
+
+.timeSlop{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(4, 25, 96);
+    width:40% ;
+    /* width: 100px;
+    height: 100px; */
+    border-radius: 10px;
+     /* box-shadow: 0px 0px 10px 5px rgb(184, 184, 184); */
+}
+
+.inpstart{
+    margin: auto;
+    margin:20px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(63, 78, 106);
+}
+
+.inpstart:hover{
+    background-color: rgb(61, 61, 93);
+    color: rgb(56, 98, 98);
+}
+
+
+.inpend{
+    margin: auto;
+    margin:20px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(63, 78, 106);
+}
+
+.inpend:hover{
+    background-color: rgb(61, 61, 93);
+    color: rgb(56, 98, 98);
+}
+
+.inpagain{
+    margin: auto;
+    margin:20px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(63, 78, 106);
+}
+
+
+.inpagain:hover{
+    background-color: rgb(61, 61, 93);
+    color: rgb(56, 98, 98);
+}
+
+.contact3 .timeSlop p{
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.analog{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #000; */
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.clock{
+    width: 200px;
+    height: 200px;
+    border: 8px solid #333;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
+}
+.hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%),rotate(0);
+    border-radius: 5px;
+}
+.hourA{
+    width: 6px;
+    height: 70px;
+    background-color: #000;
+}
+.minuteA{
+    width: 4px;
+    height: 70px;
+    background-color: #007bff;
+}
+.secondA{
+    width: 2px;
+    height: 80px;
+    background-color: #ff0000;
+}
+.dot{
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
