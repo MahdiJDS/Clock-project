@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./CSS/Timer.css">
+</head>
+
+<body>
+    <!-- منو برنامه -->
+    <div class="list">
+        <ul>
+            <a class="timeA" href="#time">Time</a>
+            <a class="timerA" href="#timer">Timer</a>
+            <a class="stoper" href="#stoper">Stoper</a>
+        </ul>
+    </div>
+
+    <!--انالوگ-->
+    <section class="analog">
+        <div class="clock">
+            <div class="hand hourA" id="houre-hand"></div>
+            <div class="hand minuteA" id="minute-hand"></div>
+            <div class="hand secondA" id="second-hand"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+    <!-- بخش تایم -->
+    <div class="contant" id="time">
+        <h1 class="TimeH1">Time</h1>
+        <div class="time">
+            <p class="showTime">00:00:00</p>
+            <p class="showDate"></p>
+        </div>
+    </div>
+    <!-- بخش تایمر -->
+    <div class="contact2" id="timer">
+        <h1 class="TimerH1">Timer</h1>
+        <div class="timer">
+            <p id="hour">00</p>
+            <p>:</p>
+            <p id="minute">00</p>
+            <p>:</p>
+            <p id="second">00</p>
+        </div>
+        <div class="btn">
+            <button class="btnstart">Play</button>
+            <button class="btnend">Stop</button>
+            <button class="btnagain">again</button>
+        </div>
+    </div>
+    <!-- بخش زمان سنج -->
+    <div class="contact3" id="stoper">
+        <h1>StopTime</h1>
+        <div class="inp">
+            <p>second:</p>
+            <input type="number" class="inpsecond">
+            <p>minute:</p>
+            <input type="number" class="inpminute">
+            <p>hour:</p>
+            <input type="number" class="inphour">
+        </div>
+        <div class="timeSlop">
+            <p id="hourS">00</p>
+            <p>:</p>
+            <p id="minuteS">00</p>
+            <p>:</p>
+            <p id="secondS">00</p>
+        </div>
+        <div class="btn">
+            <button class="inpstart">Play</button>
+            <button class="inpend">Stop</button>
+            <button class="inpagain">again</button>
+        </div>
+    </div>
+
+
+
+    <script src="./JavaScript/Timer.js"></script>
+</body>
+
+</html>
